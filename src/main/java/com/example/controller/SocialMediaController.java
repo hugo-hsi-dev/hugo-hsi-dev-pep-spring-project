@@ -73,6 +73,7 @@ public @ResponseBody Message getMessageById(@PathVariable int messageId) {
     return messageService.getById(messageId);
 }
 
+
 @DeleteMapping("/messages/{messageId}")
 @ResponseStatus(HttpStatus.OK)
 public @ResponseBody Integer deleteMessageById(@PathVariable int messageId) {
